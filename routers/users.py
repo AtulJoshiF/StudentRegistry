@@ -1,4 +1,4 @@
-from typing import Annotated
+from typing_extensions import Annotated
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
