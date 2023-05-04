@@ -13,7 +13,7 @@ class Students(Base):
     register_number = Column(Integer, unique=True, index=True)
     date_of_birth = Column(Date)
     gender = Column(String)
-    phone_number = Column(Integer)
+    phone_number = Column(String)
     course = Column(String)
     address = Column(String)
     hashed_password = Column(String)
