@@ -1,6 +1,6 @@
 from enum import Enum
 from datetime import timedelta, datetime, date
-from typing import Annotated
+from typing_extensions import Annotated
 from fastapi import APIRouter, Depends, HTTPException, Form
 from pydantic import BaseModel, EmailStr, Field, constr
 from sqlalchemy import or_
