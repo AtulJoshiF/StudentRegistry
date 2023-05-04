@@ -124,7 +124,7 @@ async def create_student(db: db_dependency, create_student_request: CreateStuden
             hashed_password=bcrypt_context.hash(create_student_request.password)
         )
     except ValueError as e:
-        raise HTTPException(status_code=400, detail=str(e))
+        raise HTTPException(status_code=400, detail=str("Test String"+e))
 
     db.add(create_student_model)
     db.commit()
