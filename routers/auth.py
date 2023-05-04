@@ -41,7 +41,7 @@ class CreateStudentRequest(BaseModel):
     register_number: int = Field(gt=0)
     date_of_birth: date
     gender: Gender
-    phone_number: int = Field(gt=1000000000, lt=9999999999)
+    phone_number: str
     course: str
     address: str
     password: str
